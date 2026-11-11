@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Carnet Gourmand</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <!-- logo et titre du site -->
+    <div class="header-inner">
+      <span class="logo" aria-hidden="true">🍲</span>
+      <div><strong>Le Carnet Gourmand</strong><small>Avis des lecteurs</small></div>
+    </div>
+  </header>
+  <main class="container">
+    <article class="card recipe-card">
+      <!-- contenu de la recette -->
+      <h1>Pâtes crémeuses au citron</h1>
+      <p class="intro">Laissez votre avis sur cette recette grâce au formulaire ci-contre.</p>
+      <section class="recipe">
+        <!--ingrédients de la recette -->
+        <h2>Ingrédients</h2>
+        <ul>
+          <li>Pâtes</li>
+          <li>Crème</li>
+          <li>Citron</li>
+          <li>Parmesan</li>
+        </ul>
+        <!-- étapes de préparation -->
+        <h2>Préparation</h2>
+        <ol>
+          <li>Cuire les pâtes.</li>
+          <li>Mélanger la crème et le citron.</li>
+          <li>Ajouter le parmesan.</li>
+        </ol>
+      </section>
+    </article>
+    <aside class="card comments-panel">
+      <!-- formulaire de commentaire -->
+      <h2>Laisser un commentaire</h2>
+      <form id="comment-form" novalidate>
+        <label for="name">Votre nom</label>
+        <input id="name" type="text" placeholder="Ex : Léa">
+        <small>Minimum 2 caractères</small>
+        <label for="message">Votre commentaire</label>
+        <textarea id="message" placeholder="Votre avis sur la recette..."></textarea>
+        <small>Minimum 10 caractères</small>
+        <button type="submit">Publier</button>
+      </form>
+      <p id="error" class="error" role="alert" hidden></p>
+      <!-- liste des commentaires -->
+      <h2>Commentaires</h2><div id="comments"></div></aside>
+  </main>
+  <footer>Devoir JavaScript – Frontend</footer>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
